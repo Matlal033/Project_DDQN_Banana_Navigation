@@ -29,7 +29,7 @@ You will also need to download the unity environnment compressed file from one o
 
 First, in the *main.py* file, make sure that the path to the UnityEnvironment is correctlyly mapped to *Banana.exe*.\
 For example : `env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')`.\
-Then, your can launch `main.py` from you command line using the virtual environment mentionned above.
+Then, your can launch `main.py` from you command line using the virtual environment created earlier.
 
 #### To watch a trained agent
 
