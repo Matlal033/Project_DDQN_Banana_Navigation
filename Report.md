@@ -2,7 +2,7 @@
 
 ### Learning Algorithm
 
-For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** method.
+For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** used for the loss function, as to not too heavily penalize large differences against a moving target.
 
 The hyperparameters used are :
 
