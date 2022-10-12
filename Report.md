@@ -32,13 +32,13 @@ In **499 episodes**, the game was solved by achieving an average reward of at le
 ![](Figure_1.png)
 
 `
-Episode 100     Average Score: 0.37 \n
-Episode 200     Average Score: 2.65
-Episode 300     Average Score: 7.37
-Episode 400     Average Score: 9.43
-Episode 500     Average Score: 11.86
-Episode 599     Average Score: 13.00
-Environment solved in 499 episodes! Average Score: 13.00
+Episode 100     Average Score: 0.37\
+Episode 200     Average Score: 2.65\
+Episode 300     Average Score: 7.37\
+Episode 400     Average Score: 9.43\
+Episode 500     Average Score: 11.86\
+Episode 599     Average Score: 13.00\
+Environment solved in 499 episodes!     Average Score: 13.00
 `
 
 ##### Average score of 17
