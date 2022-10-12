@@ -24,6 +24,6 @@ You will also need to download the unity environnment compressed file from one o
 
 ### Instructions
 
-To train the agent from scratch, your can launch `main.py` from you command line, using the virtual environment created earlier (Python 3.6 with dependencies [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt).
+To train the agent from scratch, your can launch `main.py` from you command line.
 
 To watch a trained agent, you can launch `watch_agent.py [path_to_checkpoint]` using that same virtual environment. For example : `watch_agent.py "Checkpoints\checkpoint_17.pth"`
