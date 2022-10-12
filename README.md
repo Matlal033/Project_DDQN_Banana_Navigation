@@ -25,7 +25,8 @@ You will also need to download the unity environnment compressed file from one o
 
 ### Instructions
 
-To train the agent from scratch, first make sure the path to the Banana.exe is good in the main.py file, example "env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')"\
+To train the agent from scratch, first make sure the path to the *Banana.exe* is good in the *main.py* file,\
+example `env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')`.\
 Then, your can launch `main.py` from you command line using the virtual environment mentionned above.
 
 To watch a trained agent, you can launch `watch_agent.py [path_to_checkpoint]` using that same virtual environment. For example : `watch_agent.py "Checkpoints\checkpoint_17.pth"`
