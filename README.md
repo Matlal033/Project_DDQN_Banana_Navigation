@@ -27,8 +27,8 @@ You will also need to download the unity environnment compressed file from one o
 
 #### To train the agent from scratch
 
-First, make sure that the path to the UnityEnvironment is correctlyly mapped to the *Banana.exe* file in the *main.py* file,
-example : `env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')`.\
+First, make sure that the path to the UnityEnvironment is correctlyly mapped to the *Banana.exe* file in the *main.py* file.\
+For example : `env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')`.\
 Then, your can launch `main.py` from you command line using the virtual environment mentionned above.
 
 #### To watch a trained agent
