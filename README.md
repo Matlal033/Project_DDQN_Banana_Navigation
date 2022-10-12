@@ -15,7 +15,7 @@ To run this code, Python 3.6 is required, along with the dependencies found in [
 
 You will also need to download the unity environnment compressed file from one of the follow links, and extract it inside under the `Project_DDQN_Banana_Navigation/` folder :
 
-- Linux : [click here](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt)
+- Linux : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 - Mac OSX : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 - Windows (32-bit) : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 - Windows (64-bit) : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
