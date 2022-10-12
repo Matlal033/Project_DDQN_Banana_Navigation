@@ -23,7 +23,7 @@ The neural network structure is :
 |-------|-------|------------|-------------|------------|
 | 1 | Fully Connected | 37 (state size) | 64 | ReLU |
 | 2 |  Fully Connected | 64 | 64 | ReLU |
-| 3 |  Fully Connected | 64 | 37 (state size) | None |
+| 3 |  Fully Connected | 64 | 4 (action size) | None |
 
 ### Plot of rewards
 
