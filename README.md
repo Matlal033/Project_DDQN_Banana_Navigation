@@ -9,6 +9,8 @@ The state space has a size of 37, and the action space a size of 4 (move forward
 Yellow bananas are worth 1 point, and blue ones are worth -1 point.
 The environment is considered solved when the average score over 100 consecutive episodes reaches 13.0.
 
+![](Images/Checkpoint_17.gif)
+
 ### Getting started
 
 To run this code, Python 3.6 is required, along with the dependencies found in [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt).
