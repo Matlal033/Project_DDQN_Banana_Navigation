@@ -32,7 +32,7 @@ In **499 episodes**, the game was solved by achieving an average reward of at le
 ![](Figure_1.png)
 
 `
-Episode 100     Average Score: 0.37
+Episode 100     Average Score: 0.37 /n
 Episode 200     Average Score: 2.65
 Episode 300     Average Score: 7.37
 Episode 400     Average Score: 9.43
