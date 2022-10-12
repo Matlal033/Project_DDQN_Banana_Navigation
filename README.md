@@ -12,3 +12,9 @@ The environment is considered solved when the average score over 100 consecutive
 ### Getting started
 
 To run this code Python 3.6 is required, along with the dependencies found in [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt)
+
+### Ideas for Future Work
+
+To further improve upon the algorithm used, a few modifications could be easily added, such as :
+- Using Prioritized Experience Replay (PER) to give more value to good experiences
+- Implementing a **Dueling a DDQN** instead of a simple **DDQN** to make the model converge in less episode by separating the state-value function and the action-advantage function
