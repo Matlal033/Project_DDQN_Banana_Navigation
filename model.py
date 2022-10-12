@@ -9,8 +9,7 @@ class QNetwork(nn.Module):
 
         self.state_size = state_size
         self.action_size = action_size
-        #self.num_channels = 32
-
+        
         self.model = nn.Sequential(
             nn.Linear(self.state_size, 64),
             nn.ReLU(),
