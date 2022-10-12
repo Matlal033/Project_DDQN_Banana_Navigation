@@ -25,6 +25,8 @@ The neural network structure is :
 
 ### Plot of rewards
 
+The algorithm and hyperparameters used solved for an average reward of at least +13 over 100 episode starting in **499 episodes**.
+
 ![](Figure_1.png)
 
 ##### Agent behavior with average score of 13
