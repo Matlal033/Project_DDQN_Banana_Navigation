@@ -25,13 +25,26 @@ The neural network structure is :
 
 ### Plot of rewards
 
-in **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
+##### Average score of 13
+
+In **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
 
 ![](Figure_1.png)
 
-##### Agent behavior with average score of 13
+`
+Episode 100     Average Score: 0.37
+Episode 200     Average Score: 2.65
+Episode 300     Average Score: 7.37
+Episode 400     Average Score: 9.43
+Episode 500     Average Score: 11.86
+Episode 599     Average Score: 13.00
+Environment solved in 499 episodes!     Average Score: 13.00
+`
 
-##### Agent behabior with average score of 17
+##### Average score of 17
+
+In **701 episodes**, an average score of +17 over 100 episodes could be achieved.
+
 
 ### Ideas for Future Work
 
