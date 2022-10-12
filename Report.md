@@ -1,3 +1,5 @@
+# Project Report
+
 ### Learning Algorithm
 
 For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** method.
@@ -25,7 +27,7 @@ The neural network structure is :
 
 ### Plot of rewards
 
-##### Average score of 13
+#### Average score of 13
 
 In **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
 
@@ -41,7 +43,7 @@ Episode 599     Average Score: 13.00
 Environment solved in 499 episodes!     Average Score: 13.00
 ```
 
-##### Average score of 17
+#### Average score of 17
 
 In **701 episodes**, an average score of +17 over 100 episodes could be achieved.
 
