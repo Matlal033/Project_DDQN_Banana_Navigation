@@ -19,11 +19,11 @@ The hyperparameters used are :
 
 The neural network structure is :
 
-| Layer | Input size | Output size | Activation |
-|-------|------------|-------------|------------|
-| 1 | 37 (state size) | 64 | ReLU |
-| 2 | 64 | 64 | ReLU |
-| 3 | 64 | 37 (state size) | None |
+| Layer | Type |Input size | Output size | Activation |
+|-------|-------|------------|-------------|------------|
+| 1 | Fully Connected | 37 (state size) | 64 | ReLU |
+| 2 |  Fully Connected | 64 | 64 | ReLU |
+| 3 |  Fully Connected | 64 | 4 (action size) | None |
 
 ### Plot of rewards
 
