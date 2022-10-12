@@ -20,6 +20,5 @@ class QNetwork(nn.Module):
         )
 
     def forward(self, state):
-
         x = self.model(state)
         return x

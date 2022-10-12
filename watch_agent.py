@@ -31,13 +31,11 @@ try:
 except:
     filename = None
 
-print(filename)
 agent = Agent(state_size, action_size, seed, filename)
 
 while True:
-    action = agent.act(state,0.01)                      # default epsilon is 0, to take only argmax
+    action = agent.act(state, 0.01)                # Keeping a minimum epsilon to avoid getting stuck
     action = action.astype(int)                    # Cast action as np.int32 to avoid "'numpy.int64' object has no attribute 'keys'" error
-    print("action: ", action)
     env_info = env.step(action)[brain_name]        # send the action to the environment
     next_state = env_info.vector_observations[0]   # get the next state
     reward = env_info.rewards[0]                   # get the reward

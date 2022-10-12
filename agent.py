@@ -31,7 +31,6 @@ class Agent():
             checkpoint = torch.load(filename)
             self.qnetwork_local.load_state_dict(checkpoint)
             self.qnetwork_target.load_state_dict(checkpoint)
-            print("hello")
 
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
         self.t_step = 0

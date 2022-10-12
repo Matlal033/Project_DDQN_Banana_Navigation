@@ -17,7 +17,7 @@ def ddqn(agent, n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_de
         eps_end (float): minimum value of epsilon
         eps_decay (float): multiplicative factor (per episode) for decreasing epsilon
     """
-    print("msl: ", mean_score_limit)
+
     scores = []                        # list containing scores from each episode
     scores_window = deque(maxlen=100)  # last 100 scores
     eps = eps_start                    # initialize epsilon
