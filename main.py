@@ -1,4 +1,3 @@
-import sys
 import torch
 import numpy as np
 from agent import Agent
@@ -54,11 +53,6 @@ def ddqn(agent, n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_de
 
 if __name__ == "__main__":
 
-    try:
-        filename = sys.argv[1]
-    except:
-        filename = None
-
     env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')
 
     brain_name = env.brain_names[0]
@@ -71,7 +65,7 @@ if __name__ == "__main__":
     action_size = brain.vector_action_space_size
 
     seed = 0
-    agent = Agent(state_size, action_size, seed, filename)
+    agent = Agent(state_size, action_size, seed)
     scores = ddqn(agent)
 
     # plot the scores

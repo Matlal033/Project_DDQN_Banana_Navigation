@@ -35,7 +35,6 @@ class Agent():
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
         self.t_step = 0
 
-
     def step(self, state, action, reward, next_state, done):
         self.memory.add(state, action, reward, next_state, done)
 
