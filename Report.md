@@ -12,7 +12,7 @@ The hyperparameters used are :
 - *UPDATE_EVERY* = 5
 - *Maximum timesteps per episode* = 1000
 - *Epsilon start* = 1.0
-- *Epsilon end * = 0.01
+- *Epsilon end* = 0.01
 - *Epsilon decay rate* = 0.995
 - 
 The neural network structure is :
@@ -26,6 +26,10 @@ The neural network structure is :
 ### Plot of rewards
 
 ![](Figure_1.png)
+
+##### Agent behavior with average score of 13
+
+##### Agent behabior with average score of 17
 
 ### Ideas for Future Work
 
