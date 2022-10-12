@@ -11,7 +11,7 @@ The environment is considered solved when the average score over 100 consecutive
 
 ### Getting started
 
-To run this code, Python 3.6 is required, along with the dependencies found in [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt)
+To run this code, Python 3.6 is required, along with the dependencies found in [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt).
 
 You will also need to download the unity environnment compressed file from one of the follow links, and extract it inside under the `Project_DDQN_Banana_Navigation/` folder :
 
@@ -22,6 +22,6 @@ You will also need to download the unity environnment compressed file from one o
 
 ### Instructions
 
-To train the agent from scratch, your can lauch `main.py` from you command line, using the virtual environment with Python 3.6 and the required dependencies mentionned earlier.
+To train the agent from scratch, your can launch `main.py` from you command line, using the virtual environment with Python 3.6 and the required dependencies mentionned earlier.
 
-To watch a trained agent, you can lauch `watch_agent.py [patch_to_checkpoint]` using that same virtual environment.
+To watch a trained agent, you can launch `watch_agent.py [patch_to_checkpoint]` using that same virtual environment.
