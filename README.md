@@ -31,5 +31,5 @@ example : `env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')`
 Then, your can launch `main.py` from you command line using the virtual environment mentionned above.
 
 #### To watch a trained agent
-First, make sure that the path to the UnityEnvironment is correctly mapped to the *Banana.exe* file in the *main.py* file.\
+First, make sure that the path to the UnityEnvironment is correctly mapped to the *Banana.exe* file in the *watch_agent.py* file.\
 Then, you can launch `watch_agent.py [path_to_checkpoint]` using that same virtual environment. For example : `watch_agent.py "Checkpoints\checkpoint_17.pth"`
