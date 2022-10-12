@@ -38,7 +38,7 @@ Episode 300     Average Score: 7.37
 Episode 400     Average Score: 9.43
 Episode 500     Average Score: 11.86
 Episode 599     Average Score: 13.00
-Environment solved in 499 episodes!     Average Score: 13.00
+Environment solved in 499 episodes! Average Score: 13.00
 `
 
 ##### Average score of 17
