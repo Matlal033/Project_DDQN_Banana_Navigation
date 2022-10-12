@@ -1,11 +1,12 @@
-from unityagents import UnityEnvironment
-import numpy as np
+import sys
 import torch
+import numpy as np
 from agent import Agent
 from collections import deque
 import matplotlib.pyplot as plt
+from unityagents import UnityEnvironment
 
-def dqn(n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
+def ddqn(agent, n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.995, mean_score_limit=13.0):
     """Deep Q-Learning.
 
     Params
@@ -16,6 +17,7 @@ def dqn(n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.99
         eps_end (float): minimum value of epsilon
         eps_decay (float): multiplicative factor (per episode) for decreasing epsilon
     """
+    print("msl: ", mean_score_limit)
     scores = []                        # list containing scores from each episode
     scores_window = deque(maxlen=100)  # last 100 scores
     eps = eps_start                    # initialize epsilon
@@ -25,8 +27,8 @@ def dqn(n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.99
         score = 0
         for t in range(max_t):
             action = agent.act(state, eps)
-            #Cast action as np.int32 to avoid "'numpy.int64' object has no attribute 'keys'" error
-            action = action.astype(int)
+
+            action = action.astype(int)                    # Cast action as np.int32 to avoid "'numpy.int64' object has no attribute 'keys'" error
             env_info = env.step(action)[brain_name]        # send the action to the environment
             next_state = env_info.vector_observations[0]   # get the next state
             reward = env_info.rewards[0]                   # get the reward
@@ -44,13 +46,18 @@ def dqn(n_episodes=3000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.99
         print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_window)), end="")
         if i_episode % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_window)))
-        if np.mean(scores_window)>=13.0:
+        if np.mean(scores_window)>=mean_score_limit:
             print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(i_episode-100, np.mean(scores_window)))
             torch.save(agent.qnetwork_local.state_dict(), 'checkpoint.pth')
             break
     return scores
 
 if __name__ == "__main__":
+
+    try:
+        filename = sys.argv[1]
+    except:
+        filename = None
 
     env = UnityEnvironment(file_name='Banana_Windows_x86_64/Banana.exe')
 
@@ -63,9 +70,9 @@ if __name__ == "__main__":
     state_size = len(state)
     action_size = brain.vector_action_space_size
 
-    agent = Agent(state_size, action_size, seed=0)
-
-    scores = dqn()
+    seed = 0
+    agent = Agent(state_size, action_size, seed, filename)
+    scores = ddqn(agent)
 
     # plot the scores
     fig = plt.figure()
