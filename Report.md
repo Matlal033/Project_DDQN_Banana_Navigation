@@ -5,7 +5,7 @@
 For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** method for the loss function.\
 The use of DDQN was to insure a smoother convergence, and the use of Huber loss was to not heavily penalize the local network against a moving target.
 
-The hyperparameters used are :
+##### The hyperparameters used are :
 
 - *BUFFER_SIZE* = int (2e5)
 - *BATCH_SIZE* = 128
@@ -18,7 +18,7 @@ The hyperparameters used are :
 - *Epsilon end* = 0.01
 - *Epsilon decay rate* = 0.995
 
-The neural network structure is :
+##### The neural network structure is :
 
 | Layer | Type |Input size | Output size | Activation |
 |-------|-------|------------|-------------|------------|
