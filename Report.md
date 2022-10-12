@@ -12,16 +12,16 @@ The neural network structure is :
 
 The hyperparameters used are :
 
-- BUFFER_SIZE = int (2e5)
-- BATCH_SIZE = 128 #better than 64 (e499 vs e564)
-- GAMMA = 0.98
-- TAU = 1e-3
-- LR = 5e-4
-- UPDATE_EVERY = 5 #better than 15 and 10 with batch_size 128 (e564 vs e706 vs e780)
-- max_t=1000       #Maximum timesteps per episode
-- eps_start=1.0    #Epsilon start
-- eps_end=0.01     #Epsilon end 
-- eps_decay=0.995  #Epsilon decay rate
+- *BUFFER_SIZE* = int (2e5)
+- *BATCH_SIZE* = 128 #better than 64 (e499 vs e564)
+- *GAMMA* = 0.98
+- *TAU* = 1e-3
+- *LR* = 5e-4
+- *UPDATE_EVERY* = 5   #better than 15 and 10 with batch_size 128 (e564 vs e706 vs e780)
+- *max_t* = 1000       #Maximum timesteps per episode
+- *eps_start* = 1.0    #Epsilon start
+- *eps_end* = 0.01     #Epsilon end 
+- *eps_decay* = 0.995  #Epsilon decay rate
  
 ### Plot of rewards
 
