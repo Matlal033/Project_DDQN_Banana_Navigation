@@ -14,7 +14,7 @@ The hyperparameters used are :
 - *Epsilon start* = 1.0
 - *Epsilon end* = 0.01
 - *Epsilon decay rate* = 0.995
-- 
+
 The neural network structure is :
 
 | Layer | Input size | Output size | Activation |
