@@ -28,7 +28,7 @@ The neural network structure is :
 
 ### Plot of rewards
 
-#### Average score of 13
+#### Average score of +13
 
 In **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
 
@@ -46,7 +46,7 @@ Environment solved in 499 episodes!     Average Score: 13.00
 
 ![](Images/Checkpoint_13.gif)
 
-#### Average score of 17
+#### Average score of +17
 
 In **930 episodes**, an average score of +17 over 100 episodes could be achieved.
 
