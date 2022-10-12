@@ -19,3 +19,9 @@ You will also need to download the unity environnment compressed file from one o
 - Mac OSX : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 - Windows (32-bit) : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 - Windows (64-bit) : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+
+### Instructions
+
+To train the agent from scratch, your can lauch `main.py` from you command line, using the virtual environment with Python 3.6 and the required packaged mentionned earlier.
+
+To watch a trained agent, you can lauch `watch_agent.py [patch_to_checkpoint]`.
