@@ -2,9 +2,10 @@
 
 ### Learning Algorithm
 
-For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** method.
+For this project, the **Double Q-learning (DDQN)** algorithm was used, along with the **Huber Loss** method for the loss function.\
+The use of DDQN was to insure a smoother convergence, and the use of Huber loss was to not heavily penalize the local network against a moving target.
 
-The hyperparameters used are :
+##### The hyperparameters used are :
 
 - *BUFFER_SIZE* = int (2e5)
 - *BATCH_SIZE* = 128
@@ -17,7 +18,7 @@ The hyperparameters used are :
 - *Epsilon end* = 0.01
 - *Epsilon decay rate* = 0.995
 
-The neural network structure is :
+##### The neural network structure is :
 
 | Layer | Type |Input size | Output size | Activation |
 |-------|-------|------------|-------------|------------|
@@ -27,7 +28,7 @@ The neural network structure is :
 
 ### Plot of rewards
 
-#### Average score of 13
+#### Average score of +13
 
 In **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
 
@@ -45,7 +46,7 @@ Environment solved in 499 episodes!     Average Score: 13.00
 
 ![](Images/Checkpoint_13.gif)
 
-#### Average score of 17
+#### Average score of +17
 
 In **930 episodes**, an average score of +17 over 100 episodes could be achieved.
 
@@ -72,4 +73,4 @@ Environment solved in 930 episodes!     Average Score: 17.00
 
 To further improve upon the algorithm used, a few modifications could be easily added, such as :
 - Using Prioritized Experience Replay (**PER**) to give more value to good experiences.
-- Implementing a **Dueling DDQN** instead of a simple **DDQN** to make the model converge in less episode by separating the state-value function and the action-advantage function.
+- Implementing a **Dueling DDQN** instead of a simple **DDQN** to make the model converge in fewer episodes by separating the state-value function and the action-advantage function.
