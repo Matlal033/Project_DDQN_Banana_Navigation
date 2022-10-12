@@ -9,11 +9,13 @@ The state space has a size of 37, and the action space a size of 4 (move forward
 Yellow bananas are worth 1 point, and blue ones are worth -1 point.
 The environment is considered solved when the average score over 100 consecutive episodes reaches 13.0.
 
+![](Images/Checkpoint_17.gif)
+
 ### Getting started
 
 To run this code, Python 3.6 is required, along with the dependencies found in [requirements.txt](https://github.com/Matlal033/Project_DDQN_Banana_Navigation/edit/main/requirements.txt).
 
-You will also need to download the unity environnment compressed file from one of the follow links, and extract it inside under the `Project_DDQN_Banana_Navigation/` folder :
+You will also need to download the unity environnment compressed file from one of the follow links, and extract it under the `Project_DDQN_Banana_Navigation/` folder :
 
 - Linux : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 - Mac OSX : [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
@@ -22,6 +24,6 @@ You will also need to download the unity environnment compressed file from one o
 
 ### Instructions
 
-To train the agent from scratch, your can launch `main.py` from you command line, using the virtual environment with Python 3.6 and the required dependencies mentionned earlier.
+To train the agent from scratch, your can launch `main.py` from you command line.
 
-To watch a trained agent, you can launch `watch_agent.py [path_to_checkpoint]` using that same virtual environment. For example : `watch_agent.py "Checkpoints\checkpoint_13.pth"`
+To watch a trained agent, you can launch `watch_agent.py [path_to_checkpoint]` using that same virtual environment. For example : `watch_agent.py "Checkpoints\checkpoint_17.pth"`

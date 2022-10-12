@@ -47,8 +47,26 @@ Environment solved in 499 episodes!     Average Score: 13.00
 
 #### Average score of 17
 
-In **701 episodes**, an average score of +17 over 100 episodes could be achieved.
+In **930 episodes**, an average score of +17 over 100 episodes could be achieved.
 
+![](Images/Scores_checkpoint_17.png)
+
+```
+Episode 100     Average Score: 0.37
+Episode 200     Average Score: 2.65
+Episode 300     Average Score: 7.37
+Episode 400     Average Score: 9.43
+Episode 500     Average Score: 11.86
+Episode 600     Average Score: 13.00
+Episode 700     Average Score: 15.06
+Episode 800     Average Score: 15.76
+Episode 900     Average Score: 16.36
+Episode 1000    Average Score: 16.13
+Episode 1030    Average Score: 17.00
+Environment solved in 930 episodes!     Average Score: 17.00
+```
+
+![](Images/Checkpoint_17.gif)
 
 ### Ideas for Future Work
 
