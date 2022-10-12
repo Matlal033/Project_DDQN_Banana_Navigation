@@ -25,7 +25,7 @@ The neural network structure is :
 
 ### Plot of rewards
 
-The algorithm and hyperparameters used solved for an average reward of at least +13 over 100 episode starting in **499 episodes**.
+in **499 episodes**, the game was solved by achieving an average reward of at least +13 over 100 episodes.
 
 ![](Figure_1.png)
 
